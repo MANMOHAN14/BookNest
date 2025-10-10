@@ -16,8 +16,8 @@ const Home = () => {
           <nav className="flex items-center gap-4">
             <Button variant="ghost" size="sm">Books</Button>
             <Button variant="ghost" size="sm">Categories</Button>
-            <Button variant="ghost" size="icon" size="sm"><ShoppingCart className="h-5 w-5" /></Button>
-            <Button variant="ghost" size="icon" size="sm"><Heart className="h-5 w-5" /></Button>
+            <Button variant="ghost" size="icon"><ShoppingCart className="h-5 w-5" /></Button>
+            <Button variant="ghost" size="icon"><Heart className="h-5 w-5" /></Button>
             <Button onClick={() => navigate("/auth")} size="sm">Sign In</Button>
           </nav>
         </div>
