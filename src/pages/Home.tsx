@@ -16,7 +16,7 @@ const Home = () => {
       const { data, error } = await supabase
         .from("books")
         .select("*")
-        .eq("featured", true)
+        .order("rating", { ascending: false })
         .limit(3);
       if (error) throw error;
       return data;
@@ -29,7 +29,7 @@ const Home = () => {
       const { data, error } = await supabase
         .from("books")
         .select("*")
-        .eq("trending", true)
+        .order("created_at", { ascending: false })
         .limit(3);
       if (error) throw error;
       return data;
